@@ -12,13 +12,12 @@
 <h2>Contenido del repositorio</h2>
 </div>
 
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+* [CSS media queries](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries).
+
+* [Responsive Web Design - Media Queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
+
+* [CSS Media Queries - Examples](https://www.w3schools.com/css/css3_mediaqueries_ex.asp).
+
 
 #
 
