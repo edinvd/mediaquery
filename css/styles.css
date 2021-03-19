@@ -1,0 +1,139 @@
+@font-face {
+    font-family: SF-Pro-Display-Regular;
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+  }
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Edin V
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1440, 1280, 1024, 768, 480
+ *   1024-1440   - desktop Full HD
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+ @media all and (min-width: 1440px) {
+    .todo {
+        display: none;
+    }
+
+    .nide {
+        text-align: center;
+        font-family: SF-Pro-Display-Regular;
+        font-size: 100px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .fa-biking-mountain:hover{
+        color: rgb(0, 140, 255);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+ }
+
+ @media all and (min-width: 1280px) and (max-width: 1440px) {
+     
+    header h1 {
+        text-align: center;
+        color: rgb(255, 0, 242);
+    }
+
+    article div p {
+        display: none;
+    }
+
+    .nide {
+        display: none;
+    }
+  }
+
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+     
+    header h1 {
+        text-align: center;
+        color: red;
+        background: rgb(195, 0, 255);
+        margin: 0px;
+    }
+
+    article div>p {
+        display: block;
+        text-align: right;
+        background: orange;
+        margin: 0px;
+    }
+  }
+
+ @media all and (min-width: 768px) and (max-width: 1024px) {
+     
+    h1 {
+        text-align: center;
+        color: green;
+    }
+  }
+ 
+ @media all and (min-width: 480px) and (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+  }
+ 
+ @media all and (max-width: 480px) {
+
+    h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background: #000;
+    }
+  }
+ 
+ 
+ /* Portrait */
+ @media screen and (orientation:portrait) { /* Portrait styles here */ }
+ /* Landscape */
+ @media screen and (orientation:landscape) { /* Landscape styles here */ }
+ 
+ 
+ /* CSS for iPhone, iPad, and Retina Displays */
+ 
+ /* Non-Retina */
+ @media screen and (-webkit-max-device-pixel-ratio: 1) {
+ }
+ 
+ /* Retina */
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+ only screen and (-o-min-device-pixel-ratio: 3/2),
+ only screen and (min--moz-device-pixel-ratio: 1.5),
+ only screen and (min-device-pixel-ratio: 1.5) {
+ }
+ 
+ /* iPhone Portrait */
+ @media screen and (max-device-width: 480px) and (orientation:portrait) {
+ } 
+ 
+ /* iPhone Landscape */
+ @media screen and (max-device-width: 480px) and (orientation:landscape) {
+ }
+ 
+ /* iPad Portrait */
+ @media screen and (min-device-width: 481px) and (orientation:portrait) {
+ }
+ 
+ /* iPad Landscape */
+ @media screen and (min-device-width: 481px) and (orientation:landscape) {
+ }
